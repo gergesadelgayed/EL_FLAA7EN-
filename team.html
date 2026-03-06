@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team | EL FLA7EN</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .scan-line { position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,transparent,currentColor,transparent); opacity:0; transition:opacity 0.3s; }
+    .member-card:hover .scan-line { opacity:1; }
+    .corner-tl,.corner-br { position:absolute; width:14px; height:14px; opacity:0.3; transition:all 0.35s; }
+    .corner-tl { top:8px; left:8px;   border-top:2px solid; border-left:2px solid; }
+    .corner-br { bottom:8px; right:8px; border-bottom:2px solid; border-right:2px solid; }
+    .member-card:hover .corner-tl,.member-card:hover .corner-br { opacity:1; width:18px; height:18px; }
+    .hex-bg { position:absolute; inset:0; opacity:0.025; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32z' stroke='%2339ff14' fill='none'/%3E%3C/svg%3E"); background-size:56px 100px; pointer-events:none; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="p1">EL_</span><span class="p2">FLA7</span><span class="p3">EN</span><span style="color:var(--text-dim)">://SEC</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">[ Home ]</a></li>
+      <li><a href="team.html" class="active">[ Team ]</a></li>
+      <li><a href="writeups.html">[ Writeups ]</a></li>
+      <li><a href="achievements.html">[ Progress ]</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="hex-bg"></div>
+      <div class="hero-grid-lines"></div>
+      <span class="section-tag" style="letter-spacing:6px;">// THE CREW //</span>
+      <h1>Our <span style="color:var(--green3);text-shadow:var(--glow-green-s);">Team</span></h1>
+      <p>Elite specialists in DFIR, Web Security &amp; OSINT — FCI LUXOR</p>
+      <div style="display:inline-flex;align-items:center;gap:1.5rem;background:var(--surface);border:1px solid var(--border);padding:8px 24px;border-radius:2px;font-size:0.75rem;color:var(--text-dim);margin-top:1.5rem;position:relative;">
+        <span><span style="color:var(--green3);">●</span> 6 Active Members</span>
+        <span><span style="color:var(--red);">●</span> 2 Mentors</span>
+        <span><span style="color:var(--purple);">●</span> FCI LUXOR</span>
+      </div>
+    </div>
+
+    <!-- MEMBERS -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-tag">&gt;&gt; ACTIVE MEMBERS</span>
+        <h2 class="section-title">Core <span>Members</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="grid-3" id="teamGrid" style="max-width:1150px;margin:0 auto;">
+        <div style="text-align:center;padding:3rem;grid-column:1/-1;">
+          <div class="loading-spinner"></div>
+          <p style="margin-top:1rem;font-size:0.85rem;color:var(--green3);">root@elfla7en:~$ loading --team...</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- MENTORS -->
+    <section style="padding:80px 2rem;background:var(--bg3);position:relative;overflow:hidden;">
+      <div class="hex-bg"></div>
+      <div class="hero-grid-lines"></div>
+      <div class="section-header" style="position:relative;">
+        <span class="section-tag">&gt;&gt; ADVISORS</span>
+        <h2 class="section-title">Our <span>Mentors</span></h2>
+        <div class="section-line"></div>
+        <p class="section-desc">The experts guiding our journey in cybersecurity</p>
+      </div>
+      <div class="grid-2" style="max-width:820px;margin:0 auto;" id="mentorsGrid"></div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- JOIN CTA -->
+    <section style="text-align:center;padding:80px 2rem;background:var(--bg);position:relative;overflow:hidden;">
+      <div class="hero-grid-lines"></div>
+      <div style="position:relative;">
+        <span class="section-tag">&gt;&gt; OPEN RECRUITMENT</span>
+        <h2 style="font-family:var(--font-display);font-size:2rem;color:#fff;margin-bottom:1rem;">
+          Want to be <span style="color:var(--green3);text-shadow:var(--glow-green-s);">one of us?</span>
+        </h2>
+        <p style="color:var(--text-dim);margin:0 auto 2rem;font-size:0.9rem;max-width:400px;line-height:1.8;">
+          Contact our team leader on WhatsApp to apply.
+        </p>
+        <a href="https://wa.me/201225346232?text=Hi%2C%20I%27m%20interested%20in%20joining%20EL%20FLA7EN"
+           target="_blank" class="btn btn-whatsapp" style="font-size:1rem;padding:14px 36px;">
+          📱 Message on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-logo">
+      <span class="fl">EL_</span><span class="fla">FLA7</span><span class="fp">EN</span><span style="color:var(--text-dim)">://SEC</span>
+    </span>
+    <p>&copy; 2025 EL FLA7EN Cyber Security Team — All rights reserved</p>
+    <p style="margin-top:0.5rem;font-size:0.75rem;color:var(--text-dim);">
+      // <span style="color:var(--green3);">Digital Forensics</span> &amp;
+         <span style="color:var(--red);">Incident Response</span> //
+         <span style="color:var(--purple);">FCI LUXOR</span> //
+    </p>
+    <div class="footer-credit">web made by : <span>Gerges Adel</span></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  // 6 unique colors — green, red, purple + variations — one per member
+  const THEMES = [
+    { color:'#39ff14', glow:'rgba(57,255,20,0.65)',   bg:'rgba(57,255,20,0.08)',   border:'#006622', label:'Leader'   },
+    { color:'#ff1744', glow:'rgba(255,23,68,0.6)',    bg:'rgba(255,23,68,0.08)',   border:'#550010', label:'Co-Leader'},
+    { color:'#bf5fff', glow:'rgba(191,95,255,0.6)',   bg:'rgba(191,95,255,0.08)',  border:'#330044', label:'Member'   },
+    { color:'#00e5ff', glow:'rgba(0,229,255,0.55)',   bg:'rgba(0,229,255,0.07)',   border:'#003344', label:'Member'   },
+    { color:'#ffd700', glow:'rgba(255,215,0,0.55)',   bg:'rgba(255,215,0,0.07)',   border:'#443300', label:'Member'   },
+    { color:'#ff9800', glow:'rgba(255,152,0,0.55)',   bg:'rgba(255,152,0,0.07)',   border:'#442200', label:'Member'   },
+  ];
+
+  function getInitials(name){ return name.split(' ').map(w=>w[0]).join('').substring(0,2).toUpperCase(); }
+
+  function getRoleBadge(role, t){
+    const s = `border:1px solid ${t.color};color:${t.color};background:${t.color}22;`;
+    if(role==='Leader')    return `<span class="role-leader"    style="${s}">👑 ${role}</span>`;
+    if(role==='Co-Leader') return `<span class="role-coleader"  style="${s}">⭐ ${role}</span>`;
+    return                        `<span class="role-member"    style="${s}">🛡️ ${role}</span>`;
+  }
+
+  function renderTeam(members){
+    document.getElementById('teamGrid').innerHTML = members.map((m,i)=>{
+      const t = THEMES[i % THEMES.length];
+      const initials = getInitials(m.name);
+      const skills = (m.skills||[]).map(s=>
+        `<span class="skill-tag" style="border-color:${t.color}44;color:${t.color};background:${t.color}0f;">${sanitize(s)}</span>`
+      ).join('');
+      return `
+        <div class="member-card fade-in" style="border-color:${t.border};animation-delay:${i*0.09}s;">
+          <div class="scan-line"  style="color:${t.color};"></div>
+          <div class="corner-tl"  style="border-color:${t.color};"></div>
+          <div class="corner-br"  style="border-color:${t.color};"></div>
+          <span class="member-num" style="color:${t.color};">${String(i+1).padStart(2,'0')}</span>
+          <div class="member-card-glow" style="background:radial-gradient(circle at 50% 0%,${t.color}0c,transparent 70%);"></div>
+          <div style="position:relative;z-index:1;">
+            <div class="member-avatar" style="
+              border-color:${t.color};
+              box-shadow:0 0 30px ${t.glow},inset 0 0 20px ${t.color}11;
+              background:linear-gradient(135deg,${t.color}18,var(--bg3));
+              color:${t.color}; text-shadow:0 0 15px ${t.color};
+            ">
+              ${initials}
+              <div style="position:absolute;inset:-6px;border-radius:50%;border:1px solid ${t.color};opacity:0.3;animation:avatarPulse 2s infinite ${i*0.3}s;"></div>
+            </div>
+            <h3 class="member-name" style="text-shadow:0 0 8px ${t.color}44;">${sanitize(m.name)}</h3>
+            <div style="margin-bottom:0.6rem;">${getRoleBadge(m.role,t)}</div>
+            <p class="member-spec">${sanitize(m.specialty||'')}</p>
+            <div class="skills-list">${skills}</div>
+            <p class="member-bio" style="border-color:${t.color}2a;">${sanitize(m.bio||'')}</p>
+            <a href="${sanitize(safeUrl(m.linkedin))}" target="_blank" rel="noopener"
+               class="linkedin-btn" style="border-color:${t.color}55;color:${t.color};background:${t.color}0d;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  function renderMentors(mentors){
+    document.getElementById('mentorsGrid').innerHTML = mentors.map((m,i)=>`
+      <div class="mentor-card fade-in" style="animation-delay:${i*0.15}s;">
+        <span class="mentor-icon">${m.icon||'🎓'}</span>
+        <span class="mentor-tag">// ${sanitize(m.title)} //</span>
+        <h3 class="mentor-name">${sanitize(m.name)}</h3>
+        <p class="mentor-spec">${sanitize(m.specialty)}</p>
+        <p class="mentor-affil">${sanitize(m.affiliation)}</p>
+      </div>`).join('');
+  }
+
+  async function loadAll(){
+    try {
+      const data = await getData('members');
+      renderTeam(data ? (Array.isArray(data)?data:Object.values(data)) : LOCAL_DATA.members);
+    } catch(_){ renderTeam(LOCAL_DATA.members); }
+    renderMentors(LOCAL_DATA.mentors);
+  }
+  loadAll();
+
+  document.getElementById('navToggle').onclick=()=>document.getElementById('navLinks').classList.toggle('open');
+  const btt=document.getElementById('backToTop');
+  if(btt) window.addEventListener('scroll',()=>btt.classList.toggle('visible',window.scrollY>300));
+  </script>
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+</body>
+</html>
